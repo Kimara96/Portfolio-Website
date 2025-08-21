@@ -11,11 +11,14 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact" class="btn">Contact Me</a></li>
-      </ul>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#resume">Resume</a></li>
+  <li><a href="#contact" class="btn">Contact Me</a></li>
+</ul>
+
     </nav>
   </header>
 
@@ -24,7 +27,7 @@
     <div class="hero-left">
       <p>Hi, I am</p>
       <h1>Martha Kissi</h1>
-      <h3>Web Developer / Entrepreneur</h3>
+      <h3>Junior web developer</h3>
       <div class="social-icons">
   <!-- Email -->
   <a href="mailto:marthakissi96@gmail.com">
@@ -63,15 +66,39 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <h2>My Work</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">Project 1 (coming soon)</div>
-      <div class="portfolio-item">Project 2 (coming soon)</div>
-      <div class="portfolio-item">Project 3 (coming soon)</div>
+
+</script>
+
+<!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li>A simple landing page using only HTML.</li>
+        <li>Building a portfolio website using HTML and CSS</li>
+        <li>Recruitment and talent acquisition specialist</li>
+      </ul>
     </div>
   </section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2>Project Gallery</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">Project 1 (Coming soon)</div>
+    <div class="portfolio-item">Project 2 (Coming soon)</div>
+    <div class="portfolio-item">Project 3 (Coming soon)</div>
+   
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="resume">
+  <h2>My Resume</h2>
+  <p>You can download my resume below:</p>
+  <a href="Resume.pdf" download class="btn">Download Resume</a>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -84,23 +111,5 @@
     </form>
   </section>
 <script>
-  // Reveal sections on scroll
-  const reveals = document.querySelectorAll(".reveal");
-
-  window.addEventListener("scroll", () => {
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const revealTop = reveals[i].getBoundingClientRect().top;
-      const revealPoint = 150;
-
-      if (revealTop < windowHeight - revealPoint) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  });
-</script>
-
 </body>
 </html>
