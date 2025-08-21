@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <p>Hi, I am</p>
+      <h1>Martha Kissi</h1>
+      <h3>Web Developer / Entrepreneur</h3>
+      <div class="social-icons">
+  <!-- Email -->
+  <a href="mailto:marthakissi96@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+    <span class="sr-only">Email</span>
+  </a>
+
+  <!-- GitHub -->
+    <a href="https://github.com/Kimara96" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i> <span class="sr-only">GitHub</span> </a> 
+  <!-- LinkedIn --> 
+   <a href="https://www.linkedin.com/in/martha-kissi-340937213/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin"></i> <span class="sr-only">LinkedIn</span> </div>
+
+    </div>
+    <div class="hero-right">
+      <img src="me.jpg2.jpg" alt="My photo">
+    </div>
+  </section>
+    <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer who loves creating clean and user-friendly designs. 
+      I enjoy turning ideas into reality using code and constantly learning new skills 
+      to improve my craft.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">UI/UX Basics</div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">Project 1 (coming soon)</div>
+      <div class="portfolio-item">Project 2 (coming soon)</div>
+      <div class="portfolio-item">Project 3 (coming soon)</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+<script>
+  // Reveal sections on scroll
+  const reveals = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
